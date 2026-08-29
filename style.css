@@ -56,17 +56,16 @@ body {
   line-height: 30px;
 }
 .main .grids {
-  border: 2px solid red;
   height: 39.8rem;
   position: absolute;
   right: 0rem;
-  width: 44rem;
+  width: 48rem;
 }
 .main .grids .box1 {
-  border: 1px solid red;
   position: absolute;
   left: 0;
   top: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
   height: 50%;
   width: 50%;
 }
@@ -118,7 +117,7 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -146,7 +145,7 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -174,7 +173,7 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -202,7 +201,7 @@ body {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }

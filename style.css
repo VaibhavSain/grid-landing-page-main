@@ -81,7 +81,7 @@ body {
 .main .grids .box3 {
   border: 1px solid red;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   height: 50%;
   width: 50%;
@@ -93,6 +93,118 @@ body {
   bottom: 0;
   height: 50%;
   width: 50%;
+}
+.main .grids .box1 .icon {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.main .grids .box1 .results {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main .grids .box1 .grid-title {
+  position: absolute;
+  left: 2rem;
+  bottom: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main .grids .box1 .grid-descri {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main .grids .box2 .icon {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.main .grids .box2 .results {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main .grids .box2 .grid-title {
+  position: absolute;
+  left: 2rem;
+  bottom: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main .grids .box2 .grid-descri {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main .grids .box3 .icon {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.main .grids .box3 .results {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main .grids .box3 .grid-title {
+  position: absolute;
+  left: 2rem;
+  bottom: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main .grids .box3 .grid-descri {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main .grids .box4 .icon {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.main .grids .box4 .results {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main .grids .box4 .grid-title {
+  position: absolute;
+  left: 2rem;
+  bottom: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main .grids .box4 .grid-descri {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
 }
 .footer {
   position: relative;

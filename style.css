@@ -68,28 +68,30 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   height: 50%;
   width: 50%;
+  border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
 }
 .main .grids .box2 {
-  border: 1px solid red;
   position: absolute;
   right: 0;
   top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: rgba(255, 255, 255, 0.2) solid 1px;
   height: 50%;
   width: 50%;
 }
 .main .grids .box3 {
-  border: 1px solid red;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 50%;
+  border-left: rgba(255, 255, 255, 0.2) solid 1px;
   width: 50%;
 }
 .main .grids .box4 {
-  border: 1px solid red;
   position: absolute;
   right: 0;
   bottom: 0;
+  border-left: rgba(255, 255, 255, 0.2) solid 1px;
   height: 50%;
   width: 50%;
 }

@@ -7,6 +7,7 @@ body {
   width: 100%;
   background-color: #2854fd;
 }
+/* this is header*/
 .header {
   width: 100%;
   height: 4rem;
@@ -36,6 +37,7 @@ body {
   border-radius: 50%;
   background-color: white;
 }
+/* this is main */
 .main {
   width: 100%;
   height: 40rem;
@@ -207,6 +209,7 @@ body {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
 }
+/*this is footer*/
 .footer {
   position: relative;
   height: 4rem;

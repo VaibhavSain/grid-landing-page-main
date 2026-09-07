@@ -1,234 +1,330 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #2854fd;
+  color: white;
+  overflow-x: hidden;
 }
-/* this is header*/
+
+/* ================= HEADER ================= */
+
 .header {
   width: 100%;
-  height: 4rem;
-  position: relative;
-  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
-}
-.header .menuIcon {
-  position: absolute;
-  right: 4rem;
-  top: 1.2rem;
-}
-.header .titles {
-  position: absolute;
-  left: 4rem;
+  min-height: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
   display: flex;
-  flex-direction: row;
-  top: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 4rem;
 }
+
+.header .titles {
+  display: flex;
+  align-items: center;
+}
+
 .header .title {
   color: white;
 }
+
 .header .circle {
   height: 10px;
   width: 10px;
-  margin-top: 6px;
   margin-right: 4px;
   border-radius: 50%;
   background-color: white;
 }
-/* this is main */
+
+.header .menuIcon {
+  position: static;
+}
+
+/* ================= MAIN ================= */
+
 .main {
   width: 100%;
-  height: 40rem;
+  min-height: 40rem;
   color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* Left content */
+
+.main .content {
+  width: 50%;
+  padding-left: 4rem;
+}
+
 .main .heading {
-  position: absolute;
   font-weight: 600;
   font-size: 48px;
-  left: 4rem;
-  top: 16rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
 }
+
 .main .description {
   font-size: 18px;
-  position: absolute;
-  left: 4rem;
-  top: 26rem;
   line-height: 30px;
+  max-width: 500px;
 }
+
+/* ================= GRID ================= */
+
 .main .grids {
-  height: 39.8rem;
-  position: absolute;
-  right: 0rem;
   width: 48rem;
+  max-width: 50%;
+  height: 40rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-.main .grids .box1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  height: 50%;
-  width: 50%;
-  border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
-}
-.main .grids .box2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: rgba(255, 255, 255, 0.2) solid 1px;
-  height: 50%;
-  width: 50%;
-}
-.main .grids .box3 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 50%;
-  border-left: rgba(255, 255, 255, 0.2) solid 1px;
-  width: 50%;
-}
-.main .grids .box4 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-left: rgba(255, 255, 255, 0.2) solid 1px;
-  height: 50%;
-  width: 50%;
-}
-.main .grids .box1 .icon {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-}
-.main .grids .box1 .results {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 34px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-.main .grids .box1 .grid-title {
-  position: absolute;
-  left: 2rem;
-  bottom: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.main .grids .box1 .grid-descri {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-}
-.main .grids .box2 .icon {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-}
-.main .grids .box2 .results {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 34px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-.main .grids .box2 .grid-title {
-  position: absolute;
-  left: 2rem;
-  bottom: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.main .grids .box2 .grid-descri {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-}
-.main .grids .box3 .icon {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-}
-.main .grids .box3 .results {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 34px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-.main .grids .box3 .grid-title {
-  position: absolute;
-  left: 2rem;
-  bottom: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.main .grids .box3 .grid-descri {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-}
-.main .grids .box4 .icon {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
-}
-.main .grids .box4 .results {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  font-size: 34px;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-.main .grids .box4 .grid-title {
-  position: absolute;
-  left: 2rem;
-  bottom: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.main .grids .box4 .grid-descri {
-  position: absolute;
-  left: 2rem;
-  bottom: 2rem;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-}
-/*this is footer*/
-.footer {
+
+.main .grids > div {
   position: relative;
-  height: 4rem;
-  color: white;
-  border-top: rgba(255, 255, 255, 0.2) solid 1px;
-  width: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* Remove bottom border from bottom row */
+
+.main .grids .box3,
+.main .grids .box4 {
+  border-bottom: none;
+}
+
+/* ================= GRID CONTENT ================= */
+
+.main .grids .icon {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+.main .grids .results {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.main .grids .grid-title {
+  position: absolute;
+  left: 2rem;
+  bottom: 3.5rem;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main .grids .grid-descri {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  min-height: 4rem;
+  width: 100%;
+
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 3rem;
+}
+
 .footer .trandmark {
   display: flex;
-  position: absolute;
-  left: 4rem;
-  top: 1.4rem;
-  flex-direction: row;
+  align-items: center;
 }
+
 .footer .trandmark p {
   margin-left: 10px;
 }
+
 .footer .regis {
-  position: absolute;
-  right: 3rem;
-  top: 1.4rem;
+  position: static;
+}
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main .content {
+    width: 100%;
+    padding: 5rem 2rem 4rem;
+  }
+
+  .main .heading {
+    font-size: 42px;
+  }
+
+  .main .grids {
+    width: 100%;
+    max-width: 100%;
+    height: 35rem;
+  }
+
+  .footer {
+    padding: 0 2rem;
+  }
+}
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media (max-width: 768px) {
+  /* Header */
+
+  .header {
+    padding: 0 1.5rem;
+  }
+
+  /* Main */
+
+  .main {
+    min-height: auto;
+  }
+
+  .main .content {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .main .heading {
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  .main .description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Grid */
+
+  .main .grids {
+    width: 100%;
+    height: auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 220px);
+  }
+
+  .main .grids .icon {
+    left: 1.2rem;
+    top: 1.2rem;
+  }
+
+  .main .grids .results {
+    right: 1.2rem;
+    top: 1.2rem;
+
+    font-size: 26px;
+  }
+
+  .main .grids .grid-title {
+    left: 1.2rem;
+    bottom: 3rem;
+    font-size: 14px;
+  }
+
+  .main .grids .grid-descri {
+    left: 1.2rem;
+    bottom: 1.2rem;
+    font-size: 12px;
+  }
+
+  /* Footer */
+
+  .footer {
+    min-height: 5rem;
+
+    padding: 1rem 1.5rem;
+
+    font-size: 13px;
+  }
+}
+
+/* ================================================= */
+/* ================ SMALL MOBILE ================== */
+/* ================================================= */
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .main .content {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .main .heading {
+    font-size: 30px;
+  }
+
+  .main .description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Make grid one column */
+
+  .main .grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 180px);
+  }
+
+  .main .grids .box3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .main .grids .box4 {
+    border-bottom: none;
+  }
+
+  /* Footer stacks */
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 1.5rem 1rem;
+  }
 }
